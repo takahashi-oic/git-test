@@ -1,4 +1,4 @@
 
-abstract class Monster {
+abstract class Monster extends Life{
 	 void attack() {}
 }
