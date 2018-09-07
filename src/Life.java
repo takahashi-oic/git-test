@@ -1,5 +1,13 @@
 
 public abstract class Life {
-	int hp;
-	public void dead(){};
+	private int hp;
+	public void dead(){}
+	public int getHp() {
+		return hp;
+	}
+	public void setHp(int hp) {
+		this.hp = hp;
+	};
+
+
 }
