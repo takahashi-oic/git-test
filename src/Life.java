@@ -1,4 +1,9 @@
-
+/**
+ *
+ * @author takahashi
+ * 高橋
+ *
+ */
 public abstract class Life {
 	private int hp;
 	public void dead(){}
