@@ -37,7 +37,7 @@ public class Main {
 		System.out.println("藤井が剣を装備");
 		fujii.setWeapon(ws);
 		System.out.println("藤井が八咫烏Ｂを攻撃");
-		fujii.setWeapon(ws).attack(yataB);
+		ws.attack(yataB);
 		for(;;){
 			System.out.println("ゾンビAが伊藤に攻撃");
 			zomA.attack(ito);
