@@ -9,6 +9,7 @@ public abstract class Weapon {
 
 	public void Throw(){}
 	public void attack(){}
+	public void attack(Monster m){}
 
 	public String getName() {
 		return name;

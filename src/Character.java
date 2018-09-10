@@ -4,7 +4,21 @@ public abstract class Character {
 	private String name;
 	private Weapon w;
 
-	public void attack(){}
+	//コンストラクタ
+	Character(){
+		//武器は持っていない
+		this.w = null;
+	};
+
+	public void attack(Monster m){
+		//素手
+		if(this.w == null){
+			m.setHp(m.getHp() - 2);
+		} else {//武器あり
+			w.attack(m);
+		}
+		return;
+	}
 
 	public int getLv() {
 		return lv;
