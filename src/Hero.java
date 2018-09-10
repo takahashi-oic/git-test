@@ -7,7 +7,7 @@
 public class Hero extends Character implements Human {
 	//runの実装
 	public void run(){
-
+		System.out.println("ひーろは逃げ出した!");
 	}
 
 	public void attack( Monster m ) {
