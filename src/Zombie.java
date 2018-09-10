@@ -9,7 +9,10 @@ public class Zombie extends Monster implements Human {
 		m.setHp(m.getHp() - 5);
 		System.out.println("5のダメージ");
 	}
+
 	public void run() {}
+
+	Zombie(){}
 
 	Zombie(int hp){
 		super.setHp(hp);
