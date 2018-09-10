@@ -13,6 +13,11 @@ public class Yatagarasu
 	public Yatagarasu(final int hp, final int atk) {
 		// TODO super(hp);
 	}
+	public Yatagarasu(){}
+
+	public void attack(Monster m){
+		m.setHp(m.getHp() - 5);
+	}
 
 	/**
 	 * atk getterMethod
