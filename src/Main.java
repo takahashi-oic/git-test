@@ -8,9 +8,11 @@ public class Main {
 		Zombie zomA = new Zombie(10);
 
 		for(;;){
+			System.out.println("ゾンビAが八咫烏Bに攻撃");
 			zomA.attack(yataB);
 			//死んだらおわり
 			if(yataB.getHp() <= 0){
+				System.out.println("八咫烏B 死亡");
 				return;
 			}
 		}

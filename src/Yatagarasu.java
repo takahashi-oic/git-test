@@ -17,6 +17,7 @@ public class Yatagarasu
 
 	public void attack(Monster m){
 		m.setHp(m.getHp() - 5);
+		System.out.println("5のダメージ");
 	}
 
 	/**
