@@ -4,7 +4,7 @@
  *
  */
 
-public class Hero extends Charactor implements Human {
+public class Hero extends Character implements Human {
 	//runの実装
 	public void run(){
 
