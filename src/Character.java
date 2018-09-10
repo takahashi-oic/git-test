@@ -1,8 +1,24 @@
 
 public abstract class Character {
-	int lv;
-	String name;
-	Weapon w;
+	private int lv;
+	private String name;
+	//private Weapon w;
 
-	public void attack(){};
+	public void attack(){}
+
+	public int getLv() {
+		return lv;
+	}
+
+	public void setLv(int lv) {
+		this.lv = lv;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	};
 }
