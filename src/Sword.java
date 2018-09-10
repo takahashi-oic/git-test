@@ -3,7 +3,7 @@
  * @author koyama
  *
  */
-public class Sowrd {
+public class Sword {
 	void attack() {}
 
 }
