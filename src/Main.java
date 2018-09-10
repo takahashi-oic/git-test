@@ -19,8 +19,8 @@ public class Main {
 		yataB.setHp(20);
 		zomA.setHp(20);
 
-		fujii.setHP(20);
-		ito.setHP(20);
+		fujii.setHp(20);
+		ito.setHp(20);
 
 		for(;;){
 			System.out.println("ゾンビAが八咫烏Bに攻撃");
@@ -35,7 +35,7 @@ public class Main {
 		System.out.println("藤井が八咫烏Ｂを攻撃");
 		fujii.attack(yataB);
 		System.out.println("藤井が剣を装備");
-		fujii.setWeapon(ws);
+		fujii.setW(ws);
 		System.out.println("藤井が八咫烏Ｂを攻撃");
 		ws.attack(yataB);
 		for(;;){
