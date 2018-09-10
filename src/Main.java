@@ -13,7 +13,7 @@ public class Main {
 		Weapon ws = new Sword();
 		ws.setPower(4);
 		Weapon ww = new Wand();
-		ww.setPower(2);
+		ww.setPower(3);
 
 		yataA.setHp(20);
 		yataB.setHp(20);
