@@ -2,7 +2,7 @@
 public abstract class Character {
 	private int lv;
 	private String name;
-	//private Weapon w;
+	private Weapon w;
 
 	public void attack(){}
 
@@ -20,5 +20,13 @@ public abstract class Character {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Weapon getW() {
+		return w;
+	}
+
+	public void setW(Weapon w) {
+		this.w = w;
 	};
 }
