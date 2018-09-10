@@ -8,6 +8,7 @@ public abstract class Weapon {
 	private int power;
 
 	public void Throw(){}
+
 	public void attack(){}
 	public void attack(Monster m){}
 
