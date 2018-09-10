@@ -11,11 +11,11 @@ public class Hero extends Character implements Human {
 	}
 
 	public void attack( Monster m ) {
-		if( this.w == null ){
+		if( this.getW() == null ){
 			System.out.println("素手で殴って3ダメージ");
 			m.setHp( m.getHp() - 3 );
 		}else{
-			w.attack( m );
+			this.getW().attack( m );
 		}
 
 		return;
