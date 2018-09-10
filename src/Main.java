@@ -28,7 +28,7 @@ public class Main {
 			//死んだらおわり
 			if(yataB.getHp() <= 0){
 				System.out.println("八咫烏B 死亡");
-				return;
+				break;
 			}
 		}
 
