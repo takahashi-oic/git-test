@@ -5,12 +5,15 @@ public class Main {
 		Yatagarasu yataA = new Yatagarasu();
 		Yatagarasu yataB = new Yatagarasu();
 
+		Zombie zomA = new Zombie(10);
+
 		Hero fujii = new Hero();
 		Wizard ito = new Wizard();
 
-		Weapon w = new Sword();
-
-		Zombie zomA = new Zombie(10);
+		Weapon ws = new Sword();
+		ws.setPower(4);
+		Weapon ww = new Wand();
+		ww.setPower(3);
 
 		yataA.setHp(20);
 		yataB.setHp(20);
@@ -32,7 +35,7 @@ public class Main {
 		System.out.println("藤井が八咫烏Ｂを攻撃");
 		fujii.attack(yataB);
 		System.out.println("藤井が剣を装備");
-		fujii.setWeapon(w);
+		fujii.setWeapon(ws);
 		System.out.println("藤井が八咫烏Ｂを攻撃");
 		fujii.attack(yataB);
 		for(;;){
