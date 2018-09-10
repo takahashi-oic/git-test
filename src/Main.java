@@ -13,6 +13,6 @@ public class Main {
 			if(yataB.getHp() <= 0){
 				return;
 			}
-		};
+		}
 	}
 }
