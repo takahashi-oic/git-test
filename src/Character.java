@@ -1,5 +1,5 @@
 
-public abstract class Character {
+public abstract class Character extends Life {
 	private int lv;
 	private String name;
 	private Weapon w;
