@@ -3,6 +3,6 @@
  * @author koyama
  *
  */
-public class Wand {
-	void attack() {}
+public class Wand extends Weapon {
+	public void attack() {}
 }

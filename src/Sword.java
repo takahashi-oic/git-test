@@ -3,7 +3,7 @@
  * @author koyama
  *
  */
-public class Sword {
-	void attack() {}
+public class Sword extends Weapon {
+	public void attack() {}
 
 }

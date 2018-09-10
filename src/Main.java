@@ -8,7 +8,7 @@ public class Main {
 		Hero fujii = new Hero();
 		Wizard ito = new Wizard();
 
-		Weapon w = new Weapon();
+		Weapon w = new Sword();
 
 		Zombie zomA = new Zombie(10);
 
