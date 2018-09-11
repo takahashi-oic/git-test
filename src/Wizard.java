@@ -24,5 +24,12 @@ public class Wizard extends Character implements Human{
 
 		return;
 	}
+
+	Wizard(Wizard w){
+		w.setHp(100);
+		w.setLv(1);
+		w.setName("ななしさん");
+		w.setPower(10);
+	}
 }
 
