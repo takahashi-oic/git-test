@@ -46,7 +46,6 @@ public class Main {
 			ito.attack(zomA);
 			//死んだらおわり
 			if(zomA.dead() == true){
-				System.out.println("ゾンビA 死亡");
 				ito.setExpcounter(zomA.getExp() + ito.getExpcounter());
 				System.out.println(zomA.getExp() + "の経験値を取得");
 				if(ito.getExpcounter() >= 100) {
