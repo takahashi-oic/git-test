@@ -15,8 +15,8 @@ public abstract class Character extends Life {
 	public void attack(Monster m){
 		//素手
 		if(this.w == null){
-			System.out.println("素手で殴って2ダメージ");
-			m.setHp(m.getHp() - 2);
+			System.out.println("素手で殴って" + power + "ダメージ");
+			m.setHp(m.getHp() - power);
 		} else {//武器あり
 			w.attack(m);
 		}
