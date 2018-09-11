@@ -56,10 +56,9 @@ public class Yatagarasu
 		return this.getClass().getSimpleName();
 	}
 
-	@Override
-	public void dead() {
+	/*public void dead() {
 		if(this.getHp() <= 0) System.out.printf("%sが死亡", this);
-	}
+	}*/
 
 	@Override
 	public int getHp() {
