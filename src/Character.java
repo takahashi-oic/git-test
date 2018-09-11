@@ -3,6 +3,8 @@ public abstract class Character extends Life {
 	private int lv;
 	private String name;
 	private Weapon w;
+	private int expcounter;
+	private int power;
 
 	//コンストラクタ
 	Character(){
@@ -43,5 +45,21 @@ public abstract class Character extends Life {
 
 	public void setW(Weapon w) {
 		this.w = w;
+	}
+
+	public int getExpcounter() {
+		return expcounter;
+	}
+
+	public void setExpcounter(int expcounter) {
+		this.expcounter = expcounter;
+	}
+
+	public int getPower() {
+		return power;
+	}
+
+	public void setPower(int power) {
+		this.power = power;
 	};
 }

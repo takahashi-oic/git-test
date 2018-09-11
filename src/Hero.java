@@ -20,4 +20,11 @@ public class Hero extends Character implements Human {
 
 		return;
 	}
+
+	Hero(Hero h){
+		h.setHp(100);
+		h.setLv(1);
+		h.setName("ななしさん");
+		h.setPower(10);
+	}
 }
