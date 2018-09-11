@@ -41,26 +41,14 @@ public class Main {
 		System.out.println("Hero藤井が八咫烏Ｂを攻撃");
 		ws.attack(yataB);
 		for(;;){
-			System.out.println("ゾンビAがWizard伊藤に攻撃");
-			zomA.attack(ito);
-			//死んだらおわり
-			if(ito.getHp() <= 0){
-				System.out.println("Wizard伊藤 死亡");
-				break;
-			}
-		}
-
-		System.out.println("\n");
-
-		for(;;){
 			System.out.println("Wizard伊藤がゾンビAに攻撃");
 			ito.attack(zomA);
 			//死んだらおわり
 			if(zomA.dead() == true){
 				System.out.println("ゾンビA 死亡");
-				ito.getExpcounter();
-				System.out.println("の経験値を取得");
-				if(ito.getExpcounter() > 100) {
+				ito.setExpcounter(zomA.getExp() + ito.getExpcounter());
+				System.out.println(zomA.getExp() + "の経験値を取得");
+				if(ito.getExpcounter() >= 100) {
 					ito.lvup();
 					System.out.println("Wizard伊藤は"+ito.getLv()+"にレベルアップ");
 				}
