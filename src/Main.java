@@ -8,9 +8,11 @@ public class Main {
 		Zombie zomA = new Zombie(10);
 
 		Hero fujii = new Hero();
+		fujii.setPower(20);
 		Wizard ito = new Wizard();
 		ito.setPower(30);
 		SuperHero fujiwara = new SuperHero();
+
 
 		Weapon ws = new Sword();
 		ws.setPower(10);
@@ -58,8 +60,6 @@ public class Main {
 		}
 		System.out.println("SuperHero藤原がHero藤井を攻撃");
 		fujiwara.attack(fujii);
-
-		System.out.println("Hero藤井 死亡");
-
+		fujii.dead();
 	}
 }
