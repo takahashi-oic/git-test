@@ -11,9 +11,9 @@ public class Main {
 		Wizard ito = new Wizard();
 
 		Weapon ws = new Sword();
-		ws.setPower(4);
+		ws.setPower(10);
 		Weapon ww = new Wand();
-		ww.setPower(3);
+		ww.setPower(5);
 
 		yataA.setHp(20);
 		yataB.setHp(20);

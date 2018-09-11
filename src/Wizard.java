@@ -14,4 +14,15 @@ public class Wizard extends Character implements Human{
 		super.setName(name);
 	}
 
+	public void attack( Monster m ) {
+		if( this.getW() == null ){
+			System.out.println("素手で殴って3ダメージ");
+			m.setHp( m.getHp() - 3 );
+		}else{
+			this.getW().attack( m );
+		}
+
+		return;
+	}
 }
+
