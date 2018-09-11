@@ -32,18 +32,18 @@ public class Main {
 			}
 		}
 		System.out.println("\n");
-		System.out.println("藤井が八咫烏Ｂを攻撃");
+		System.out.println("Hero藤井が八咫烏Ｂを攻撃");
 		fujii.attack(yataB);
-		System.out.println("藤井が剣を装備");
+		System.out.println("Hero藤井が剣を装備");
 		fujii.setW(ws);
-		System.out.println("藤井が八咫烏Ｂを攻撃");
+		System.out.println("Hero藤井が八咫烏Ｂを攻撃");
 		ws.attack(yataB);
 		for(;;){
-			System.out.println("ゾンビAが伊藤に攻撃");
+			System.out.println("ゾンビAがWizard伊藤に攻撃");
 			zomA.attack(ito);
 			//死んだらおわり
 			if(ito.getHp() <= 0){
-				System.out.println("伊藤 死亡");
+				System.out.println("Wizard伊藤 死亡");
 				return;
 			}
 		}
