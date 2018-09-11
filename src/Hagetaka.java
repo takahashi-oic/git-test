@@ -22,7 +22,10 @@ public class Hagetaka extends Monster implements Bird {
 		System.out.println("ハゲタカは地に落ちた");
 	}
 
-	Hagetaka(){}
+	Hagetaka(){
+		this.setHp(100);
+		this.setExp(100);
+	}
 
 	Hagetaka(int hp){
 		super.setHp(hp);
