@@ -9,6 +9,7 @@ public class Main {
 
 		Hero fujii = new Hero();
 		Wizard ito = new Wizard();
+		SuperHero fujiwara = new SupreHero();
 
 		Weapon ws = new Sword();
 		ws.setPower(10);
@@ -21,6 +22,7 @@ public class Main {
 
 		fujii.setHp(20);
 		ito.setHp(20);
+		fujiwara.setHp(100);
 
 		for(;;){
 			System.out.println("ゾンビAが八咫烏Bに攻撃");
@@ -44,9 +46,24 @@ public class Main {
 			//死んだらおわり
 			if(ito.getHp() <= 0){
 				System.out.println("Wizard伊藤 死亡");
-				return;
+				break;
 			}
 		}
+
+		System.out.println("\n");
+
+		for(;;){
+			System.out.println("Wizard伊藤がゾンビAに攻撃");
+			ito.attack(zomA);
+			//死んだらおわり
+			if(zomA.getHp() <= 0){
+				System.out.println("ゾンビA 死亡");
+				System.out.println("Wizard伊藤 レベルアップ");
+				break;
+			}
+		}
+		System.out.println("SuperHero藤原がHero藤井を攻撃");
+		fujiwara.attack(fujii);
 
 	}
 }
