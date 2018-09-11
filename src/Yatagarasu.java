@@ -66,4 +66,7 @@ public class Yatagarasu
 	public void setHp(final int hp) {
 		super.setHp(hp);
 	}
+	@Override
+	public void fly() {
+	}
 }
