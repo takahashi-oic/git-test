@@ -5,6 +5,7 @@ public abstract class Character extends Life {
 	private Weapon w;
 	private int expcounter; //EXPの累計
 	private int power; //素手の威力
+	private int maxhp;
 
 	//コンストラクタ
 	Character(){
@@ -21,6 +22,11 @@ public abstract class Character extends Life {
 			w.attack(m);
 		}
 		return;
+	}
+
+	public void lvup(){
+		this.setLv(this.getLv() + 1);
+		this.setHp(this.getMaxhp());
 	}
 
 	public int getLv() {
@@ -61,5 +67,13 @@ public abstract class Character extends Life {
 
 	public void setPower(int power) {
 		this.power = power;
+	}
+
+	public int getMaxhp() {
+		return maxhp;
+	}
+
+	public void setMaxhp(int maxhp) {
+		this.maxhp = maxhp;
 	};
 }
