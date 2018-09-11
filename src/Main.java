@@ -9,6 +9,7 @@ public class Main {
 
 		Hero fujii = new Hero();
 		Wizard ito = new Wizard();
+		ito.setPower(30);
 		SuperHero fujiwara = new SuperHero();
 
 		Weapon ws = new Sword();
