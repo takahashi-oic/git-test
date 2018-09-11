@@ -3,21 +3,29 @@ public class Main {
 
 	public static void main(String[] args) {
 		Yatagarasu yataA = new Yatagarasu();
+		yataA.setName("八咫烏A");
 		Yatagarasu yataB = new Yatagarasu();
+		yataB.setName("八咫烏B");
 
 		Zombie zomA = new Zombie(10);
+		zomA.setName("ゾンビA");
 
 		Hero fujii = new Hero();
 		fujii.setPower(20);
+		fujii.setName("Hero藤井");
 		Wizard ito = new Wizard();
 		ito.setPower(30);
+		ito.setName("Wizard伊藤");
 		SuperHero fujiwara = new SuperHero();
+		fujiwara.setName("SuperHero藤原");
 
 
 		Weapon ws = new Sword();
 		ws.setPower(10);
+		ws.setName("木の剣");
 		Weapon ww = new Wand();
 		ww.setPower(5);
+		ww.setName("木の棒");
 
 		yataA.setHp(20);
 		yataB.setHp(20);
@@ -27,27 +35,21 @@ public class Main {
 		ito.setHp(20);
 		fujiwara.setHp(100);
 
-		for(;;){
-			System.out.println("ゾンビAが八咫烏Bに攻撃");
-			zomA.attack(yataB);
-			//死んだらおわり
-			if(yataB.getHp() <= 0){
-				System.out.println("八咫烏B 死亡");
-				break;
-			}
-		}
-		System.out.println("\n");
-		System.out.println("Hero藤井が八咫烏Ｂを攻撃");
-		fujii.attack(yataB);
-		System.out.println("Hero藤井が剣を装備");
-		fujii.setW(ws);
-		System.out.println("Hero藤井が八咫烏Ｂを攻撃");
-		ws.attack(yataB);
-		while(ito.attack(zomA) != true){
+		while(zomA.attack(yataB)){
 
 		}
-		System.out.println("SuperHero藤原がHero藤井を攻撃");
+		System.out.println("\n");
+		//Hero藤井が八咫烏Ｂを攻撃
+		fujii.attack(yataB);
+		//Hero藤井が剣を装備
+		fujii.setW(ws);
+		//Hero藤井が八咫烏Ｂを攻撃
+		ws.attack(yataB);
+		while(ito.attack(zomA)){
+
+		}
+		//SuperHero藤原がHero藤井を攻撃
 		fujiwara.attack(fujii);
-		fujii.dead();
+		//fujii.dead();
 	}
 }

@@ -13,6 +13,7 @@ public abstract class Character extends Life {
 		this.w = null;
 	};
 	public boolean attack( Character c ) {
+		System.out.println(this.getName() + "が" + c.getName() + "を攻撃");
 		if( this.getW() == null ){
 			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
 			c.setHp( c.getHp() - this.getPower() );
@@ -27,6 +28,7 @@ public abstract class Character extends Life {
 	}
 
 	public boolean attack(Monster m){
+		System.out.println(this.getName() + "が" + m.getName() + "を攻撃");
 		//素手
 		if(this.w == null){
 			System.out.println("素手で殴って" + power + "ダメージ");
@@ -77,6 +79,7 @@ public abstract class Character extends Life {
 	}
 
 	public void setW(Weapon w) {
+		System.out.println(this.getName() + "が" + w.getName() + "を装備");
 		this.w = w;
 	}
 

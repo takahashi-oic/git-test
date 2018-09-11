@@ -10,6 +10,16 @@ abstract class Monster extends Life{
 		this.exp = exp;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	private int exp;
+
+	private String name;
 
 }
