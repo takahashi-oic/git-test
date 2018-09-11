@@ -6,8 +6,6 @@
 public class Wizard extends Character implements Human{
 	public void run() {}
 
-	Wizard() {}
-
 	Wizard(int lv,int hp,String name) {
 		super.setLv(lv);
 		super.setHp(hp);
@@ -16,8 +14,8 @@ public class Wizard extends Character implements Human{
 
 	public void attack( Monster m ) {
 		if( this.getW() == null ){
-			System.out.println("素手で殴って3ダメージ");
-			m.setHp( m.getHp() - 3 );
+			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
+			m.setHp( m.getHp() - this.getPower() );
 		}else{
 			this.getW().attack( m );
 		}
@@ -25,11 +23,11 @@ public class Wizard extends Character implements Human{
 		return;
 	}
 
-	Wizard(Wizard w){
-		w.setHp(100);
-		w.setLv(1);
-		w.setName("ななしさん");
-		w.setPower(10);
+	Wizard(){
+		this.setHp(100);
+		this.setLv(1);
+		this.setName("ななしさん");
+		this.setPower(10);
 	}
 }
 

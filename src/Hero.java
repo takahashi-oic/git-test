@@ -12,8 +12,8 @@ public class Hero extends Character implements Human {
 
 	public void attack( Monster m ) {
 		if( this.getW() == null ){
-			System.out.println("素手で殴って3ダメージ");
-			m.setHp( m.getHp() - 3 );
+			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
+			m.setHp( m.getHp() - this.getPower() );
 		}else{
 			this.getW().attack( m );
 		}
@@ -21,10 +21,10 @@ public class Hero extends Character implements Human {
 		return;
 	}
 
-	Hero(Hero h){
-		h.setHp(100);
-		h.setLv(1);
-		h.setName("ななしさん");
-		h.setPower(10);
+	Hero(){
+		this.setHp(100);
+		this.setLv(1);
+		this.setName("ななしさん");
+		this.setPower(10);
 	}
 }
