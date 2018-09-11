@@ -61,7 +61,7 @@ public class Main {
 				ito.getExpcounter();
 				System.out.println("の経験値を取得");
 				if(ito.getExpcounter() > 100) {
-					ito.
+					ito.lvup();
 					System.out.println("Wizard伊藤は"+ito.getLv()+"にレベルアップ");
 				}
 
