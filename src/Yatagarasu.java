@@ -19,6 +19,18 @@ public class Yatagarasu
 		this.setExp(100);
 	}
 
+	Yatagarasu(String name){
+		this.setName(name);
+		this.setHp(100);
+		this.setExp(100);
+	}
+
+	Yatagarasu(String name,int hp){
+		this.setName(name);
+		this.setHp(hp);
+		this.setExp(100);
+	}
+
 	public void attack(Monster m){
 		m.setHp(m.getHp() - 5);
 		System.out.println("5のダメージ");
