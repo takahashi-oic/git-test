@@ -9,4 +9,9 @@ public class Sword extends Weapon {
 		System.out.println(this.getPower() + "のダメージ");
 	}
 
+	public void attack(Character c) {
+		c.setHp(c.getHp() - this.getPower());
+		System.out.println(this.getPower() + "のダメージ");
+	}
+
 }

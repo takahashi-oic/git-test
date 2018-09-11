@@ -11,6 +11,7 @@ public abstract class Weapon {
 
 	public void attack(){}
 	public void attack(Monster m){}
+	public void attack(Character c){}
 
 	public String getName() {
 		return name;

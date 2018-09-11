@@ -21,6 +21,17 @@ public class Hero extends Character implements Human {
 		return;
 	}
 
+	public void attack( Character c ) {
+		if( this.getW() == null ){
+			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
+			c.setHp( c.getHp() - this.getPower() );
+		}else{
+			this.getW().attack( c );
+		}
+
+		return;
+	}
+
 	Hero(){
 		this.setHp(100);
 		this.setLv(1);
