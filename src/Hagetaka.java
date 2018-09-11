@@ -29,6 +29,7 @@ public class Hagetaka extends Monster implements Bird {
 
 	Hagetaka(int hp){
 		super.setHp(hp);
+		this.setExp(100);
 	}
 
 }
