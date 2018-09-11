@@ -18,9 +18,9 @@ public class Hagetaka extends Monster implements Bird {
 	public void run() {}
 	public void fly() {}
 
-	public void dead(){
+	/*public void dead(){
 		System.out.println("ハゲタカは地に落ちた");
-	}
+	}*/
 
 	Hagetaka(){
 		this.setHp(100);
