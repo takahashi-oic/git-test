@@ -9,7 +9,7 @@ public class Main {
 
 		Hero fujii = new Hero();
 		Wizard ito = new Wizard();
-		SuperHero fujiwara = new SupreHero();
+		SuperHero fujiwara = new SuperHero();
 
 		Weapon ws = new Sword();
 		ws.setPower(10);
@@ -58,7 +58,10 @@ public class Main {
 			//死んだらおわり
 			if(zomA.getHp() <= 0){
 				System.out.println("ゾンビA 死亡");
+
+				System.out.println("の経験値を取得");
 				System.out.println("Wizard伊藤 レベルアップ");
+
 				break;
 			}
 		}
