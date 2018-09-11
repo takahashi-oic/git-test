@@ -3,8 +3,8 @@ public abstract class Character extends Life {
 	private int lv;
 	private String name;
 	private Weapon w;
-	private int expcounter;
-	private int power;
+	private int expcounter; //EXPの累計
+	private int power; //素手の威力
 
 	//コンストラクタ
 	Character(){
