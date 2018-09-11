@@ -32,7 +32,7 @@ public class Zombie extends Monster implements Human {
 	}
 
 	Zombie(int hp){
-		super.setHp(hp);
+		this.setHp(hp);
 		this.setExp(100);
 	}
 
