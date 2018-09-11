@@ -12,8 +12,21 @@ public abstract class Character extends Life {
 		//武器は持っていない
 		this.w = null;
 	};
+	public boolean attack( Character c ) {
+		if( this.getW() == null ){
+			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
+			c.setHp( c.getHp() - this.getPower() );
+		}else{
+			this.getW().attack( c );
+		}
 
-	public void attack(Monster m){
+		if(c.dead() == true) {
+			return false;
+		}
+		return true;
+	}
+
+	public boolean attack(Monster m){
 		//素手
 		if(this.w == null){
 			System.out.println("素手で殴って" + power + "ダメージ");
@@ -21,7 +34,21 @@ public abstract class Character extends Life {
 		} else {//武器あり
 			w.attack(m);
 		}
-		return;
+
+		if(m.dead() == true){
+			this.setExpcounter(m.getExp() + this.getExpcounter());
+			System.out.println(m.getExp() + "の経験値を取得");
+			if(this.getExpcounter() >= 100) {
+				this.lvup();
+				System.out.println(this.getName() + "は"+this.getLv()+"にレベルアップ");
+			}
+
+
+		}
+		if(m.dead() == true) {
+			return false;
+		}
+		return true;
 	}
 
 	public void lvup(){
