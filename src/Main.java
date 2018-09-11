@@ -31,7 +31,7 @@ public class Main {
 				break;
 			}
 		}
-
+		System.out.println("\n");
 		System.out.println("藤井が八咫烏Ｂを攻撃");
 		fujii.attack(yataB);
 		System.out.println("藤井が剣を装備");
