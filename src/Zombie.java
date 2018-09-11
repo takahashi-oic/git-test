@@ -17,9 +17,12 @@ public class Zombie extends Monster implements Human {
 
 	public void run() {}
 
-	public void dead(){
+	public boolean dead(){
 		if( this.getHp() <= -100 ){
 			System.out.println("ゾンビ死亡");
+			return true;
+		}else{
+			return false;
 		}
 	}
 
