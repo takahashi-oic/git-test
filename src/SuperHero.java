@@ -2,21 +2,12 @@
 public class SuperHero extends Hero {
 	public void SuperHero() {}
 	void attack() {}
-	public void attack( Character c ) {
-		if( this.getW() == null ){
-			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
-			c.setHp( c.getHp() - this.getPower() );
-		}else{
-			this.getW().attack( c );
-		}
-
-		if(c.dead()!= true){
-			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
-			c.setHp( c.getHp() - this.getPower() );
-		}else{
-			this.getW().attack( c );
-		}
-
-		return;
+	public boolean attack( Character c ) {
+		super.attack(c);
+		return super.attack(c);
+	}
+	public boolean attack( Monster m ) {
+		super.attack(m);
+		return super.attack(m);
 	}
 }

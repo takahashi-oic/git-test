@@ -12,26 +12,12 @@ public class Wizard extends Character implements Human{
 		super.setName(name);
 	}
 
-	public void attack( Monster m ) {
-		if( this.getW() == null ){
-			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
-			m.setHp( m.getHp() - this.getPower() );
-		}else{
-			this.getW().attack( m );
-		}
-
-		return;
+	public boolean attack( Monster m ) {
+		return super.attack(m);
 	}
 
-	public void attack( Character c ) {
-		if( this.getW() == null ){
-			System.out.println("素手で殴って"+ this.getPower() +"ダメージ");
-			c.setHp( c.getHp() - this.getPower() );
-		}else{
-			this.getW().attack( c );
-		}
-
-		return;
+	public boolean attack( Character c ) {
+		return super.attack(c);
 	}
 
 	Wizard(){
