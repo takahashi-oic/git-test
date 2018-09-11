@@ -6,7 +6,11 @@
  */
 public abstract class Life {
 	private int hp;
-	public void dead(){}
+	public void dead(){
+		if(this.hp <= 0){
+			System.out.println("死亡");
+		}
+	}
 
 	public int getHp() {
 		return hp;
