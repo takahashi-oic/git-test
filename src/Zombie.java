@@ -41,7 +41,14 @@ public class Zombie extends Monster implements Human {
 		this.setExp(100);
 	}
 
-	Zombie(int hp){
+	Zombie(String name){
+		this.setName(name);
+		this.setHp(100);
+		this.setExp(100);
+	}
+
+	Zombie(String name,int hp){
+		this.setName(name);
 		this.setHp(hp);
 		this.setExp(100);
 	}

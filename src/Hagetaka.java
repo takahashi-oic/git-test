@@ -27,8 +27,15 @@ public class Hagetaka extends Monster implements Bird {
 		this.setExp(100);
 	}
 
-	Hagetaka(int hp){
-		super.setHp(hp);
+	Hagetaka(String name){
+		this.setName(name);
+		this.setHp(100);
+		this.setExp(100);
+	}
+
+	Hagetaka(String name,int hp){
+		this.setName(name);
+		this.setHp(hp);
 		this.setExp(100);
 	}
 
