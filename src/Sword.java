@@ -16,7 +16,7 @@ public class Sword extends Weapon {
 
 	public boolean attack(Character c) {
 		c.setHp(c.getHp() - this.getPower());
-		System.out.println(c.getName() + "に" + .getPower() + "のダメージ");
+		System.out.println(c.getName() + "に" + this.getPower() + "のダメージ");
 
 		if(c.dead() == true) {
 			return false;

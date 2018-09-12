@@ -10,8 +10,13 @@ public abstract class Weapon {
 	public void Throw(){}
 
 	public void attack(){}
-	public boolean attack(Monster m){}
-	public boolean attack(Character c){}
+	public boolean attack(Monster m){
+		return false;
+	}
+	public boolean attack(Character c){
+		return false;
+
+	}
 
 	public String getName() {
 		return name;

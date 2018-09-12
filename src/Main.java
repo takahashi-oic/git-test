@@ -7,7 +7,7 @@ public class Main {
 		Yatagarasu yataB = new Yatagarasu();
 		yataB.setName("八咫烏B");
 
-		Zombie zomA = new Zombie(10);
+		Zombie zomA = new Zombie();
 		zomA.setName("ゾンビA");
 
 		Hero fujii = new Hero();

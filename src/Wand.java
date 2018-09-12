@@ -4,13 +4,23 @@
  *
  */
 public class Wand extends Weapon {
-	public void attack(Monster m) {
+	public boolean attack(Monster m) {
 		m.setHp(m.getHp() - this.getPower());
 		System.out.println(this.getPower() + "のダメージ");
+
+		if(m.dead() == true) {
+			return false;
+		}
+		return true;
 	}
 
-	public void attack(Character c) {
+	public boolean attack(Character c) {
 		c.setHp(c.getHp() - this.getPower());
 		System.out.println(this.getPower() + "のダメージ");
+
+		if(c.dead() == true) {
+			return false;
+		}
+		return true;
 	}
 }
