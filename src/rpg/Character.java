@@ -46,7 +46,6 @@ public abstract class Character extends Life {
 				System.out.println(this.getName() + "は"+this.getLv()+"にレベルアップ");
 			}
 
-
 		}
 		if(m.dead() == true) {
 			return false;
@@ -106,5 +105,5 @@ public abstract class Character extends Life {
 
 	public void setMaxhp(int maxhp) {
 		this.maxhp = maxhp;
-	};
+	}
 }
