@@ -1,3 +1,4 @@
+package rpg;
 /**
  *
  * @author 小池 はるか

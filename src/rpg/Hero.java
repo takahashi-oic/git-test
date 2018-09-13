@@ -1,3 +1,4 @@
+package rpg;
 /**
  *
  * @author 小池 はるか
@@ -18,7 +19,7 @@ public class Hero extends Character implements Human {
 		return super.attack(c);
 	}
 
-	Hero(){
+	public Hero(){
 		this.setHp(100);
 		this.setLv(1);
 		this.setName("ななしさん");

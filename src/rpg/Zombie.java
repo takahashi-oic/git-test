@@ -1,3 +1,4 @@
+package rpg;
 /**
  *
  * @author fujinawa
@@ -36,7 +37,7 @@ public class Zombie extends Monster implements Human {
 		}
 	}
 
-	Zombie(){
+	public Zombie(){
 		this.setHp(100);
 		this.setExp(100);
 	}

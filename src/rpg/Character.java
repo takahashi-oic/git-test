@@ -1,3 +1,4 @@
+package rpg;
 
 public abstract class Character extends Life {
 	private int lv;

@@ -1,3 +1,4 @@
+package rpg;
 /**
  * @author ishisaka
  * 石坂 春輝

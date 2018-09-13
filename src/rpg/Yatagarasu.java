@@ -1,3 +1,4 @@
+package rpg;
 /**
  * 八咫烏
  * @author ishisaka
