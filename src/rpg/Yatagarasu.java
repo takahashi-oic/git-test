@@ -15,18 +15,18 @@ public class Yatagarasu
 		// TODO super(hp);
 	}
 
-	Yatagarasu(){
+	public Yatagarasu(){
 		this.setHp(100);
 		this.setExp(100);
 	}
 
-	Yatagarasu(String name){
+	public Yatagarasu(String name){
 		this.setName(name);
 		this.setHp(100);
 		this.setExp(100);
 	}
 
-	Yatagarasu(String name,int hp){
+	public Yatagarasu(String name,int hp){
 		this.setName(name);
 		this.setHp(hp);
 		this.setExp(100);

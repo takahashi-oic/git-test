@@ -21,7 +21,7 @@ public class Wizard extends Character implements Human{
 		return super.attack(c);
 	}
 
-	Wizard(){
+	public Wizard(){
 		this.setHp(100);
 		this.setLv(1);
 		this.setName("ななしさん");

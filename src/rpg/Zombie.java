@@ -38,6 +38,7 @@ public class Zombie extends Monster implements Human {
 	}
 
 	public Zombie(){
+		this.setName("ゾンビ");
 		this.setHp(100);
 		this.setExp(100);
 	}
