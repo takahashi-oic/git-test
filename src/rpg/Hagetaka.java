@@ -24,6 +24,7 @@ public class Hagetaka extends Monster implements Bird {
 	}*/
 
 	public Hagetaka(){
+		this.setName("ハゲタカ");
 		this.setHp(100);
 		this.setExp(100);
 	}

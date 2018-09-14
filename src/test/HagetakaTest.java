@@ -1,5 +1,7 @@
 package test;
 
+import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 import rpg.Hagetaka;
@@ -12,50 +14,40 @@ public class HagetakaTest {
 	public void test() {}
 
 	@Test public void 引数なしコンストラクタで設定がされているか() {
-		System.out.println("引数なしコンストラクタで設定がされているか");
 		Hagetaka t = new Hagetaka();
-		System.out.println("zombieのname:" + t.getName());
-		System.out.println("zombieのhp:" + t.getHp());
-		System.out.println("zombieのexp:" + t.getExp());
-		System.out.println("\n");
+		assertEquals("ハゲタカ",t.getName());
+		assertEquals(100,t.getHp());
+		assertEquals(100,t.getExp());
 	}
 
 	@Test public void 名前ありコンストラクタで設定がされているか() {
-		System.out.println("名前ありコンストラクタで設定がされているか");
 		Hagetaka t = new Hagetaka("ゴブルス");
-		System.out.println("zombieのname:" + t.getName());
-		System.out.println("zombieのhp:" + t.getHp());
-		System.out.println("zombieのexp:" + t.getExp());
-		System.out.println("\n");
+		assertEquals("ゴブルス",t.getName());
+		assertEquals(100,t.getHp());
+		assertEquals(100,t.getExp());
 	}
 
 	@Test public void 名前とHPありコンストラクタで設定がされているか() {
-		System.out.println("名前とHPありコンストラクタで設定がされているか");
 		Hagetaka t = new Hagetaka("ゴブルス",80);
-		System.out.println("zombieのname:" + t.getName());
-		System.out.println("zombieのhp:" + t.getHp());
-		System.out.println("zombieのexp:" + t.getExp());
-		System.out.println("\n");
+		assertEquals("ゴブルス",t.getName());
+		assertEquals(80,t.getHp());
+		assertEquals(100,t.getExp());
 	}
 
 	@Test public void Characterにattackでダメージが与えられているか() {
-		System.out.println("Characterにattackでダメージが与えられているか");
 		Hagetaka t = new Hagetaka();
 		Hero h = new Hero();
-		System.out.println("heroのhp:" + h.getHp());
+		assertEquals(100,h.getHp());
 		t.attack(h);
-		System.out.println("heroのhp:" + h.getHp());
-		System.out.println("\n");
+		assertEquals(95,h.getHp());
 	}
 
 	@Test public void Monsterにattackでダメージが与えられているか() {
-		System.out.println("Monsterにattackでダメージが与えられているか");
 		Hagetaka t = new Hagetaka();
 		Zombie z = new Zombie();
-		System.out.println("zombieのhp:" + z.getHp());
+		assertEquals(100,z.getHp());
 		t.attack(z);
-		System.out.println("zombieのhp:" + z.getHp());
-		System.out.println("\n");
+		assertEquals(95,z.getHp());
 	}
 
 }
