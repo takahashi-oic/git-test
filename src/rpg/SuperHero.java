@@ -1,7 +1,7 @@
 package rpg;
 
 public class SuperHero extends Hero {
-	public void SuperHero() {
+	public void SuperHero(){
 
 	}
 	void attack() {}
@@ -13,6 +13,7 @@ public class SuperHero extends Hero {
 		}
 		//2回目の攻撃 結果をreturn
 		return super.attack(c);
+
 	}
 	public boolean attack( Monster m ) {
 		//1回目の攻撃

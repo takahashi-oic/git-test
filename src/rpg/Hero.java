@@ -24,5 +24,7 @@ public class Hero extends Character implements Human {
 		this.setLv(1);
 		this.setName("ななしさん");
 		this.setPower(10);
+
+		this.setMaxhp(getHp());
 	}
 }

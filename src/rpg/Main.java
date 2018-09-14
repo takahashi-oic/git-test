@@ -13,6 +13,7 @@ public class Main {
 
 		Hero fujii = new Hero();
 		fujii.setPower(20);
+		fujii.setHp(20);
 		fujii.setName("Hero藤井");
 		Wizard ito = new Wizard();
 		ito.setPower(30);
@@ -50,7 +51,7 @@ public class Main {
 
 		}
 		//SuperHero藤原がHero藤井を攻撃
-		fujiwara.attack(fujii);
+		fujiwara.attack(zomA);
 		//fujii.dead();
 	}
 }
