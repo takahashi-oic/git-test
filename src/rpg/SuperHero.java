@@ -1,7 +1,9 @@
 package rpg;
 
 public class SuperHero extends Hero {
-	public void SuperHero() {}
+	public void SuperHero() {
+
+	}
 	void attack() {}
 	public boolean attack( Character c ) {
 		//1回目の攻撃
