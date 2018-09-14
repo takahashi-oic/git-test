@@ -13,7 +13,8 @@ public class Main {
 
 		Hero fujii = new Hero();
 		fujii.setPower(20);
-		fujii.setHp(100);
+		fujii.setHp(20);
+		fujii.setMaxhp(20);
 		fujii.setName("Hero藤井");
 		Wizard ito = new Wizard();
 		ito.setPower(30);
