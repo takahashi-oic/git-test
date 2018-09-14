@@ -13,7 +13,7 @@ public class Main {
 
 		Hero fujii = new Hero();
 		fujii.setPower(20);
-		fujii.setHp(20);
+		fujii.setHp(100);
 		fujii.setName("Hero藤井");
 		Wizard ito = new Wizard();
 		ito.setPower(30);
@@ -23,10 +23,10 @@ public class Main {
 
 
 		Weapon ws = new Sword();
-		ws.setPower(10);
+		ws.setPower(50);
 		ws.setName("木の剣");
 		Weapon ww = new Wand();
-		ww.setPower(5);
+		ww.setPower(30);
 		ww.setName("木の棒");
 
 		yataA.setHp(20);
@@ -51,7 +51,8 @@ public class Main {
 
 		}
 		//SuperHero藤原がHero藤井を攻撃
-		fujiwara.attack(zomA);
+		fujiwara.setW(ws);
+		fujiwara.attack(fujii);
 		//fujii.dead();
 	}
 }

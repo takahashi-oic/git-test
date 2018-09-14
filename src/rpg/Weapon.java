@@ -11,11 +11,10 @@ public abstract class Weapon {
 	public void Throw(){}
 
 	public void attack(){}
-	public boolean attack(Monster m){
-		return false;
+	public void attack(Monster m){
+
 	}
-	public boolean attack(Character c){
-		return false;
+	public void attack(Character c){
 
 	}
 

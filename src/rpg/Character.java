@@ -45,9 +45,6 @@ public abstract class Character extends Life {
 				this.lvup();
 				System.out.println(this.getName() + "は"+this.getLv()+"にレベルアップ");
 			}
-
-		}
-		if(m.dead() == true) {
 			return false;
 		}
 		return true;
