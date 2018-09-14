@@ -63,7 +63,11 @@ public abstract class Character extends Life {
 	}
 
 	public void setLv(int lv) {
-		this.lv = lv;
+		if(lv <= 0) {
+			this.lv = 1;
+		} else 	{
+			this.lv = lv;
+		}
 	}
 
 	public String getName() {
@@ -96,7 +100,11 @@ public abstract class Character extends Life {
 	}
 
 	public void setPower(int power) {
-		this.power = power;
+		if(power <= 0) {
+			this.power = 10;
+		} else {
+			this.power = power;
+		}
 	}
 
 	public int getMaxhp() {

@@ -20,7 +20,11 @@ public abstract class Life {
 		return hp;
 	}
 	public void setHp(int hp) {
-		this.hp = hp;
+		if(hp <= 0) {
+			this.hp = 1;
+		} else {
+			this.hp = hp;
+		}
 	};
 
 
